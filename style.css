@@ -1,0 +1,88 @@
+@keyframes static{
+    0% {background-position-x:0px;}
+    100%{background-position-x:-500px;}
+}
+@keyframes sprint{
+    0% {background-position-x:0;}
+    100%{background-position-x:-2000px;}
+
+}
+@keyframes back{
+    0% {background-position-x:0;}
+    50%{background-position-x:-335px;}
+}
+@keyframes Shoryuken{
+    0% {background-position-x:0;}
+    50%{background-position-x:-335px;}
+}
+@keyframes Tatsumaki{
+    0% {background-position-x:0;}
+    50%{background-position-x:-335px;}
+}
+@keyframes hadoken{
+    0% {background-position-x:0;}
+    50%{background-position-x:-335px;}
+}
+@keyframes ko{
+    0% {background-position-x:0;}
+    50%{background-position-x:-335px;}
+}
+
+
+#stage{
+    width: 100%;
+}
+    
+    .stage{
+        background: url("SeanStage.jpg.webp") ;
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .ken{
+        background: url("kenstreet.png") no-repeat;
+        width: 300px;
+        height: 680px;
+        border: 1px solid black;
+        margin: auto auto 0;
+        background-size: 400em;
+        background-position-x: -15px;
+        background-position-y: 20px;
+    }
+#static:checked ~ .ken{
+    animation: static .8s infinite steps(2);
+}
+
+#sprint:checked ~ .ken{
+    animation: sprint .8s infinite steps(8);
+    background-position-y :-420px ;
+
+}
+#back:checked ~ .ken{
+    animation: back .8s infinite steps(2);
+    background-position-y :-745px ;
+
+}
+#Shoryuken:checked ~ .ken{
+    animation: Shoryuken .8s infinite steps(2);
+    background-position-y :-1250px ;
+
+}
+#Tatsumaki:checked ~ .ken{
+    animation: Tatsumaki .8s infinite steps(8);
+    background-position-y :-420px ;
+
+}
+#hadoken:checked ~ .ken{
+    animation: hadoken .8s infinite steps(8);
+    background-position-y :-420px ;
+
+}
+#ko:checked ~ .ken{
+    animation: ko .8s infinite steps(8);
+    background-position-y :-420px ;
+
+}*/
